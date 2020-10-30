@@ -1,0 +1,29 @@
+
+#step1,
+#step2,
+#step3,
+#back {
+  display: none;
+}
+
+.card-body {
+  height: 150px;
+}
+.card-footer {
+  height: 10rem;
+}
+/* .card-footer label {
+  width: 100%;
+} */
+#resetBtn{
+  border:none;
+
+}
+
+.red{
+  color: red;
+}
+.red:hover{
+  text-decoration: none;
+  color: lightcoral;
+}
