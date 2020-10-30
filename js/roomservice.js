@@ -28,11 +28,11 @@ buttonChoices.forEach(buttonChoosen => {
     });
 });
 
-
 showSteps = (step) => {
     // laat de terugknop zien als je van af stap 0 naar voren gaat en laat de volgende stap zien
     document.querySelector('#back').style.display = "block";
     document.querySelector('#step' + step).style.display = "flex";
+    document.querySelector('#step' + (step-1)).style.display = "none";
 };
 
 hideSteps = (step) => {
@@ -46,4 +46,5 @@ hideSteps = (step) => {
         document.querySelector('#back').style.display = "none";
     }
     document.querySelector('#step' + step).style.display = "none";
+    document.querySelector('#step' + (step-1)).style.display = "flex";
 };

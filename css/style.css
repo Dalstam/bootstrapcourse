@@ -7,17 +7,14 @@
 }
 
 .card-body {
-  height: 150px;
+  min-height: 256px;
 }
 .card-footer {
-  height: 10rem;
+  min-height: 128px;
 }
-/* .card-footer label {
-  width: 100%;
-} */
+
 #resetBtn{
   border:none;
-
 }
 
 .red{

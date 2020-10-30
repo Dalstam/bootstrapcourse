@@ -10,81 +10,148 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="w-75 mx-auto">
-    <main class="container-fluid">
+    <main class="container-lg">
       <form id="form" class="" action="order.html">
-        <!-- <input id="reset" class="btn btn-link btn-sm red" type="reset">Reset form</input> -->
         <button type="button" id="resetBtn" class="btn btn-link btn-sm red" value="Reset form">reset</button>
 
-        <div id="step0" class="form-row step form-group">
+        <div id="step0" class="row step form-group">
             <div class="col-md-6">
               <input id="naam" type="text" class="form-control" placeholder="Uw naam"required>
             </div>
             <div class="col-md-4">
-              <input id="kamerNo" type="number" class="form-control" placeholder="Wat is uw kamernummer?" required>
+              <input id="kamerNo"  type="number" class="form-control" placeholder="Wat is uw kamernummer?" required>
             </div>
           </div>
-        <div id="step1" class="form-row step form-group">
-          <!-- <div id="breakfast" class="form-row col-md-6"></div>
-          <div id="lunch" class="form-row col-md-6"></div>
-          <div id="dinner" class="form-row "></div> -->
-          <div id="snacks_latenight" class="flex-column">
-            <h2 class="lead">Snacks</h2>
+
+        <div id="step1" class="row step form-group">
+      <!-- Breakfast    -->
+        <div id="breakfast" class=" form-group">
+          <div class="col">
+            <h2 class=" display-5">Breakfast</h2>
+            <!-- eggs -->
             <div class="form-row">
-
-                <!-- nachos -->
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="img/nachos.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-header">Nachos</h5>
-                    <div class="card-body">
-                      <p class="card-text">Tortilia chips met gesmolten kaas</p>
-                      <p>€4,50</p>
-                    </div>
-                    <div class="card-footer ">
-                      <label for="nachos" >Hoeveel porties wilt u bestellen?</label>
-                      <input id="nachos" type="number" steps="1"></input>
-                      <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                    </div>
+            <!-- eggs -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="img/eggs.png" class="card-img-top" alt="...">
+                  <h5 class="card-header">Scrambled eggs</h5>
+                  <div class="card-body">
+                    <p class="card-text">F
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
+                      reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro molestiae.</p>
+                    <p>€8,50</p>
+                  </div>
+                  <div class="card-footer ">
+                    <label for="Scrambled" >Hoeveel porties wilt u bestellen?</label>
+                    <input id="Scrambled" class="w-25" type="number" steps="1"></input>
+                    <button id="reset-Scrambled" class="btn btn-link btn-sm red" type="">Leeg maken</button>
+                  </div>
                 </div>
+              </div>
+            <!-- full_english -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="img/full_english.png" class="card-img-top" alt="...">
+                  <h5 class="card-header">Full_english</h5>
+                  <div class="card-body">
+                    <p class="card-text">Full_english. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
+                      reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro molestiae.</p>
+                    <p>€10,50</p>
+                  </div>
+                  <div class="card-footer ">
+                    <label for="Full_english" >Hoeveel porties wilt u bestellen?</label>
+                    <input id="Full_english" class="w-25" type="number" steps="1"></input>
+                    <button id="reset-Full_english" class="btn btn-link btn-sm red" type="">Leeg maken</button>
+                  </div>
                 </div>
-                    <!-- bitterballen -->
-                <div class=" col-md-4">
-                <div class="card " >
-                    <img src="img/bitterballen.png" class="card-img-top" alt="...">
-                    <h5 class="card-header">Bitterballen</h5>
-                    <div class="card-body">
-                      <p class="card-text">Gefrituurde Garnituur </p>
-                      <p>€4,50</p>
-                    </div>
-                    <div class="card-footer ">
-                      <label for="bitterballen" >Hoeveel porties wilt u bestellen?</label>
-                      <input id="bitterballen" type="number" steps="1" ></input>
-                      <p class=" text-muted">1 portie is 6 bitterballen</p>
-                      <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                    </div>
+              </div>
+            <!-- Granola -->
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="img/granola.png" class="card-img-top" alt="...">
+                  <h5 class="card-header">Granola met Yohgurt</h5>
+                  <div class="card-body">
+                    <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
+                      reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro molestiae.</p>
+                    <p>€10,50</p>
+                  </div>
+                  <div class="card-footer ">
+                    <label for="Granola" >Hoeveel porties wilt u bestellen?</label>
+                    <input id="Granolah" class="w-25" type="number" steps="1"></input>
+                    <button id="reset-Granola" class="btn btn-link btn-sm red" type="">Leeg maken</button>
+                  </div>
                 </div>
-                </div>
-                      <!-- Kaasstengels -->
-                <div class="col-md-4">
-                <!-- Kaasstengels -->
-                <div class="card" >
-                    <img src="img/Kaasstengels.jpg" class="card-img-top" alt="...">
-                    <h5 class="card-header">Kaasstengels</h5>
-                    <div class="card-body">
-                      <p class="card-text">Gefrituurde deegstengels gevuld met kaas</p>
-                      <p>€4,50</p>
-                    </div>
-                    <div class="card-footer">
-                      <label for="kaasstengels">Hoeveel porties wilt u bestellen?</label>
-                      <input id="kaasstengels" type="number" ></input>
-                      <p class=" text-muted">1 portie is 6 kaasstengels</p>
-                      <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                      </div>
-                    </div>
-                </div>
-
-
+              </div>
             </div>
+         </div>
+         </div>
+          <!-- < <div id="lunch" class="form-row col-md-6"></div>
+          <div id="dinner" class="form-row "></div> -->
+
+          <div id="snacks_latenight" class=" form-group">
+            <div class="col">
+              <h2 class="display-5">Snacks</h2>
+              <div class="form-row">
+                  <!-- nachos -->
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="img/nachos.png" class="card-img-top" alt="...">
+                      <h5 class="card-header">Nachos</h5>
+                      <div class="card-body">
+                        <p class="card-text">Tortilia chips met gesmolten kaas</p>
+                        <p>€4,50</p>
+                      </div>
+                      <div class="card-footer ">
+                        <label for="nachos" >Hoeveel porties wilt u bestellen?</label>
+                        <input id="nachos"  class="w-25" type="number" steps="1"></input>
+                        <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
+
+                      </div>
+                  </div>
+                  </div>
+                      <!-- bitterballen -->
+                  <div class=" col-md-4">
+                  <div class="card " >
+                      <img src="img/bitterballen.png" class="card-img-top" alt="...">
+                      <h5 class="card-header">Bitterballen</h5>
+                      <div class="card-body">
+                        <p class="card-text">Gefrituurde Garnituur </p>
+                        <p>€4,50</p>
+                      </div>
+                      <div class="card-footer ">
+                        <label for="bitterballen" >Hoeveel porties wilt u bestellen?</label>
+                        <input id="bitterballen" class="w-25" type="number" steps="1" ></input>
+                        <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
+                        <p class=" font-weight-lighter font-italic text-muted">1 portie is 6 bitterballen</p>
+
+                      </div>
+                  </div>
+                  </div>
+                        <!-- Kaasstengels -->
+                  <div class="col-md-4">
+                  <!-- Kaasstengels -->
+                  <div class="card" >
+                      <img src="img/Kaasstengels.png" class="card-img-top" alt="...">
+                      <h5 class="card-header">Kaasstengels</h5>
+                      <div class="card-body">
+                        <p class="card-text">Gefrituurde deegstengels gevuld met kaas</p>
+                        <p>€4,50</p>
+                      </div>
+                      <div class="card-footer">
+                        <label for="kaasstengels">Hoeveel porties wilt u bestellen?</label>
+                        <input id="kaasstengels" class="w-25" type="number" ></input>
+
+                        <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
+                        <p class=" font-weight-lighter font-italic text-muted">1 portie is 6 kaasstengels</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
 
 
             </div>
@@ -96,7 +163,7 @@
 
           </div>
           <div id="step3" class="row step form-group">
-          <h1>STEP 3</h1>
+          <h1>/h1>
            </div>
            <div class="navButtons d-flex">
             <button id="back"  >Vorige</button>
