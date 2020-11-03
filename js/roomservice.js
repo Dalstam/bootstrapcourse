@@ -4,12 +4,13 @@ let steps = 0;
 
 buttonChoices.forEach(buttonChoosen => {
     buttonChoosen.addEventListener('click', (e) => {
-        if ((steps == (stepRows - 1)) && buttonChoosen.id== "next") {
+        if ((steps == (stepRows - 1)) && buttonChoosen.id == "next") {
             // Dit is de laatste stap, hierna moet het form submit worden
             // alert('the end');
+
         } else {
             e.preventDefault();
-        //    checken welke knop er gedruk wordt en dan de naar voren of terug.
+            //    checken welke knop er gedruk wordt en dan de naar voren of terug.
             switch (buttonChoosen.id) {
                 case "next":
                     steps++;
@@ -19,20 +20,21 @@ buttonChoices.forEach(buttonChoosen => {
                     hideSteps(steps);
                     steps--;
                     break;
-                case "resetBtn":
-                    // document.getElementById('form').reset();
-                    document.getElementById("form").reset();
-                    break;
             }
         }
     });
 });
 
 showSteps = (step) => {
+    // TODO @Bouke verplichte velden afvangen voordat je naar de volgende stap kan
     // laat de terugknop zien als je van af stap 0 naar voren gaat en laat de volgende stap zien
     document.querySelector('#back').style.display = "block";
+    console.log('#step' + step);
     document.querySelector('#step' + step).style.display = "flex";
-    document.querySelector('#step' + (step-1)).style.display = "none";
+    document.querySelector('#step' + (step - 1)).style.display = "none";
+    if (step == (stepRows - 1)) {
+        showOrder();
+    }
 };
 
 hideSteps = (step) => {
@@ -46,5 +48,5 @@ hideSteps = (step) => {
         document.querySelector('#back').style.display = "none";
     }
     document.querySelector('#step' + step).style.display = "none";
-    document.querySelector('#step' + (step-1)).style.display = "flex";
+    document.querySelector('#step' + (step - 1)).style.display = "flex";
 };

@@ -1,26 +1,26 @@
-
 #step1,
 #step2,
 #step3,
+#step-summary,
 #back {
   display: none;
 }
 
 .card-body {
-  min-height: 256px;
+  min-height: 330px;
 }
 .card-footer {
   min-height: 128px;
 }
 
-#resetBtn{
-  border:none;
+#resetBtn {
+  border: none;
 }
 
-.red{
+.red {
   color: red;
 }
-.red:hover{
+.red:hover {
   text-decoration: none;
   color: lightcoral;
 }

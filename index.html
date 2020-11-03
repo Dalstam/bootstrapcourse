@@ -1,179 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body class="w-75 mx-auto">
     <main class="container-lg">
-      <form id="form" class="" action="order.html">
-        <button type="button" id="resetBtn" class="btn btn-link btn-sm red" value="Reset form">reset</button>
 
-        <div id="step0" class="row step form-group">
-            <div class="col-md-6">
-              <input id="naam" type="text" class="form-control" placeholder="Uw naam"required>
-            </div>
-            <div class="col-md-4">
-              <input id="kamerNo"  type="number" class="form-control" placeholder="Wat is uw kamernummer?" required>
-            </div>
+      <div class="jumbotron">
+        <h1 class="display-3">Hotel Academy</h1>
+        <p class="lead">roomservice</p>
+        <hr class="my-2">
+        <p>Heerlijk genieten op de kamer</p>
+      </div>
+      <form id="form" action="order.html">
+        <div id="resetBtn" class="btn btn-link btn-sm red">reset</div>
+        <!-- Naam en kamernummer sectie -->
+        <section id="step0" class="row step form-group">
+          <div class="col-md-6">
+            <input id="naam" type="text" class="form-control" placeholder="Uw naam" required>
           </div>
-
-        <div id="step1" class="row step form-group">
-      <!-- Breakfast    -->
-        <div id="breakfast" class=" form-group">
-          <div class="col">
-            <h2 class=" display-5">Breakfast</h2>
-            <!-- eggs -->
-            <div class="form-row">
-            <!-- eggs -->
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="img/eggs.png" class="card-img-top" alt="...">
-                  <h5 class="card-header">Scrambled eggs</h5>
-                  <div class="card-body">
-                    <p class="card-text">F
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
-                      reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro molestiae.</p>
-                    <p>€8,50</p>
-                  </div>
-                  <div class="card-footer ">
-                    <label for="Scrambled" >Hoeveel porties wilt u bestellen?</label>
-                    <input id="Scrambled" class="w-25" type="number" steps="1"></input>
-                    <button id="reset-Scrambled" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                  </div>
-                </div>
-              </div>
-            <!-- full_english -->
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="img/full_english.png" class="card-img-top" alt="...">
-                  <h5 class="card-header">Full_english</h5>
-                  <div class="card-body">
-                    <p class="card-text">Full_english. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
-                      reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro molestiae.</p>
-                    <p>€10,50</p>
-                  </div>
-                  <div class="card-footer ">
-                    <label for="Full_english" >Hoeveel porties wilt u bestellen?</label>
-                    <input id="Full_english" class="w-25" type="number" steps="1"></input>
-                    <button id="reset-Full_english" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                  </div>
-                </div>
-              </div>
-            <!-- Granola -->
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="img/granola.png" class="card-img-top" alt="...">
-                  <h5 class="card-header">Granola met Yohgurt</h5>
-                  <div class="card-body">
-                    <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
-                      reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro molestiae.</p>
-                    <p>€10,50</p>
-                  </div>
-                  <div class="card-footer ">
-                    <label for="Granola" >Hoeveel porties wilt u bestellen?</label>
-                    <input id="Granolah" class="w-25" type="number" steps="1"></input>
-                    <button id="reset-Granola" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                  </div>
-                </div>
-              </div>
+          <div class="col-md-4">
+            <input id="kamerNo" type="number" class="form-control" placeholder="Wat is uw kamernummer?" required>
+          </div>
+        </section>
+        <!-- menu sectie -->
+        <section id="step1" class="row step form-group">
+          <nav class="navbar navbar-expand navbar-light bg-light fixed-top w-75 mx-auto">
+            <div class="nav navbar-nav">
+              <a class="nav-item nav-link active" href="#Ontbijt">Ontbijt <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#dinner">Lunch / Avondeten</a>
+              <a class="nav-item nav-link" href="#snacks">Snacks</a>
             </div>
-         </div>
-         </div>
-          <!-- < <div id="lunch" class="form-row col-md-6"></div>
-          <div id="dinner" class="form-row "></div> -->
+          </nav>
 
-          <div id="snacks_latenight" class=" form-group">
+          <!-- Ontbijt    -->
+          <section id="Ontbijt" class="  form-group mt-5 ">
             <div class="col">
-              <h2 class="display-5">Snacks</h2>
+              <h2 class=" ">Ontbijt</h2>
+              <!-- eggs -->
               <div class="form-row">
-                  <!-- nachos -->
-                  <div class="col-md-4">
-                    <div class="card">
-                      <img src="img/nachos.png" class="card-img-top" alt="...">
-                      <h5 class="card-header">Nachos</h5>
-                      <div class="card-body">
-                        <p class="card-text">Tortilia chips met gesmolten kaas</p>
-                        <p>€4,50</p>
-                      </div>
-                      <div class="card-footer ">
-                        <label for="nachos" >Hoeveel porties wilt u bestellen?</label>
-                        <input id="nachos"  class="w-25" type="number" steps="1"></input>
-                        <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-
-                      </div>
+                <!-- eggs -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/eggs.png" class="card-img-top " alt="...">
+                    <h5 class="card-header">Scrambled eggs</h5>
+                    <div class="card-body">
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
+                        reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro
+                        molestiae.</p>
+                      <p>€8,50</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="Scrambled">Hoeveel porties wilt u bestellen?</label>
+                      <input id="Scrambled" class="w-25" type="number" steps="1"></input>
+                      <div id="reset-Scrambled" class="btn btn-link btn-sm red">Leeg maken</div>
+                    </div>
                   </div>
+                </div>
+                <!-- full_english -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/full_english.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Full_english</h5>
+                    <div class="card-body">
+                      <p class="card-text">Full_english. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
+                        reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro
+                        molestiae.</p>
+                      <p>€10,50</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="Full_english">Hoeveel porties wilt u bestellen?</label>
+                      <input id="Full_english" class="w-25" type="number" steps="1"></input>
+                      <div id="reset-Full_english" class="btn btn-link btn-sm red">Leeg maken</div>
+                    </div>
                   </div>
-                      <!-- bitterballen -->
-                  <div class=" col-md-4">
-                  <div class="card " >
-                      <img src="img/bitterballen.png" class="card-img-top" alt="...">
-                      <h5 class="card-header">Bitterballen</h5>
-                      <div class="card-body">
-                        <p class="card-text">Gefrituurde Garnituur </p>
-                        <p>€4,50</p>
-                      </div>
-                      <div class="card-footer ">
-                        <label for="bitterballen" >Hoeveel porties wilt u bestellen?</label>
-                        <input id="bitterballen" class="w-25" type="number" steps="1" ></input>
-                        <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                        <p class=" font-weight-lighter font-italic text-muted">1 portie is 6 bitterballen</p>
-
-                      </div>
+                </div>
+                <!-- Granola -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/granola.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Granola met Yohgurt</h5>
+                    <div class="card-body">
+                      <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate fugiat quos doloremque praesentium ipsa! Tempore aspernatur nisi
+                        reprehenderit minus labore? Inventore laudantium eum similique neque cumque totam natus porro
+                        molestiae.</p>
+                      <p>€10,50</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="Granola">Hoeveel porties wilt u bestellen?</label>
+                      <input id="Granolah" class="w-25" type="number" steps="1"></input>
+                      <button id="reset-Granola" class="btn btn-link btn-sm red">Leeg maken</button>
+                    </div>
                   </div>
-                  </div>
-                        <!-- Kaasstengels -->
-                  <div class="col-md-4">
-                  <!-- Kaasstengels -->
-                  <div class="card" >
-                      <img src="img/Kaasstengels.png" class="card-img-top" alt="...">
-                      <h5 class="card-header">Kaasstengels</h5>
-                      <div class="card-body">
-                        <p class="card-text">Gefrituurde deegstengels gevuld met kaas</p>
-                        <p>€4,50</p>
-                      </div>
-                      <div class="card-footer">
-                        <label for="kaasstengels">Hoeveel porties wilt u bestellen?</label>
-                        <input id="kaasstengels" class="w-25" type="number" ></input>
-
-                        <button id="reset-nachos" class="btn btn-link btn-sm red" type="">Leeg maken</button>
-                        <p class=" font-weight-lighter font-italic text-muted">1 portie is 6 kaasstengels</p>
-                        </div>
-                      </div>
-                  </div>
+                </div>
               </div>
             </div>
+          </section>
+          <!-- diner -->
+          <section id="dinner" class="form-group ">
+            <div class="col">
+              <h2 class="">Lunch / Avondeten</h2>
+              <div class="form-row">
+                <!-- Homemade hamburger -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/hamburger.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Homemade hamburger</h5>
+                    <div class="card-body">
+                      <p class="card-text">250 gram gekruid gehakt, pittige chedar kaas, roode ui, tomaat, komkommer,
+                        saus, geroosterd hamburger brood</p>
+                      <p>€15,00</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="nachos">Hoeveel hamburgers wilt u bestellen?</label>
+                      <input id="nachos" class="w-25" type="number" steps="1"></input>
+                      <button id="reset-hamburger" class="btn btn-link btn-sm red">Leeg maken</button>
 
-
-
+                    </div>
+                  </div>
+                </div>
+                <!-- Sole á la meuniere -->
+                <div class=" col-md-4">
+                  <div class="card ">
+                    <img src="img/sole.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Sole á la meuniere</h5>
+                    <div class="card-body">
+                      <p class="card-text">In botergebakken Tong (vis) met aardappel, haricots vert en citroen. </p>
+                      <p>€20,00</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="bitterballen">Hoeveel wilt u bestellen?</label>
+                      <input id="bitterballen" class="w-25" type="number" steps="1"></input>
+                      <button id="reset-sole" class="btn btn-link btn-sm red">Leeg maken</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Pappardelle al funghi -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/papardelle.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Pappardelle al funghi</h5>
+                    <div class="card-body">
+                      <p class="card-text">Pappardelle (pasta) met paddenstoelen, roomsaus en peterselie</p>
+                      <p>€14,50</p>
+                    </div>
+                    <div class="card-footer">
+                      <label for="kaasstengels">Hoeveel wilt u bestellen?</label>
+                      <input id="kaasstengels" class="w-25" type="number"></input>
+                      <div id="reset-papa" class="btn btn-link btn-sm red">Leeg maken</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div id="step2" class="row step form-group">
+          </section>
+          <!-- Snacks -->
+          <section id="snacks" class=" form-group ">
+            <div class="col">
+              <h2 class="">Snacks</h2>
+              <div class="form-row">
+                <!-- nachos -->
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="img/nachos.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Nachos</h5>
+                    <div class="card-body">
+                      <p class="card-text">Tortilia chips met gesmolten kaas</p>
+                      <p>€4,50</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="nachos">Hoeveel porties wilt u bestellen?</label>
+                      <input id="nachos" class="w-25" type="number" steps="1"></input>
+                      <button id="reset-nachos" class="btn btn-link btn-sm red">Leeg maken</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- bitterballen -->
+                <div class=" col-md-4">
+                  <div class="card ">
+                    <img src="img/bitterballen.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Bitterballen</h5>
+                    <div class="card-body">
+                      <p class="card-text">Gefrituurde Garnituur </p>
+                      <p>€4,50</p>
+                    </div>
+                    <div class="card-footer ">
+                      <label for="bitterballen">Hoeveel porties wilt u bestellen?</label>
+                      <input id="bitterballen" class="w-25" type="number" steps="1"></input>
+                      <button id="reset-nachos" class="btn btn-link btn-sm red">Leeg maken</button>
+                      <p class=" font-weight-lighter font-italic text-muted">1 portie is 6 bitterballen</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Kaasstengels -->
+                <div class="col-md-4">
+                  <!-- Kaasstengels -->
+                  <div class="card">
+                    <img src="img/Kaasstengels.png" class="card-img-top" alt="...">
+                    <h5 class="card-header">Kaasstengels</h5>
+                    <div class="card-body">
+                      <p class="card-text">Gefrituurde deegstengels gevuld met kaas</p>
+                      <p>€4,50</p>
+                    </div>
+                    <div class="card-footer">
+                      <label for="kaasstengels">Hoeveel porties wilt u bestellen?</label>
+                      <input id="kaasstengels" class="w-25" type="number"></input>
+                      <div id="reset-nachos" class="btn btn-link btn-sm red">Leeg maken</div>
+                      <p class=" font-weight-lighter font-italic text-muted">1 portie is 6 kaasstengels</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-            <label for="naam" class="col-md-2  " >Hoe laat?</label>
-            <input id="naam" type="time" class="col-md-2" >
+        </section>
+        <!-- tijd sectie -->
+        <section id="step2" class="flex-column step form-group">
+          <div class="form-group">
+            <label class="">Hoe laat? </label>
+            <input id="tijd" type="time" class="col-md-2">
+          </div>
 
+          <div class="form-group">
+            <label for="spec-wensen">Speciale wensen</label>
+            <textarea class="form-control" name="spec-wensen" id="spec-wensen" rows=" 3"></textarea>
           </div>
-          <div id="step3" class="row step form-group">
-          <h1>/h1>
-           </div>
-           <div class="navButtons d-flex">
-            <button id="back"  >Vorige</button>
-            <button id="next" >Volgende </button>
+        </section>
+
+        <!-- Samenvatting en bevestiging  sectie-->
+        <section id="step3" class=" flex-column step form-group">
+          <h2 class="">Uw bestelling</h2>
+
+          <div id="bestelling">
+            <div id="naamSummary"></div>
+            <div id="kamerSummary"> </div>
+            <div id="tijdSummary"></div>
+            <div id="bestellingSummary"></div>
           </div>
+        </section>
+
+        <div class="navButtons btn-group" role="group">
+
+          <button id="back" class="btn-sm btn btn-outline-dark mr-2  " type="button">
+
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+
+            Vorige</button>
+          <button id="next" class="btn-sm  btn btn-outline-success " type=" button">Volgende
+            <svg class="bi bi-chevron-right" width="32" height="32" viewBox="0 0 20 20" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" />
+            </svg> </button>
+        </div>
       </form>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
     <script src="js/roomservice.js"></script>
+    <script src="js/sumary.js"></script>
   </body>
+
 </html>
