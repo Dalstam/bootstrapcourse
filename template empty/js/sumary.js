@@ -45,6 +45,7 @@ menuItems.forEach(menuItem => {
             case "spec-wensen":
                 roomServiceObj.wensenValue = menuItem.value;
                 break;
+
         }
     });
 });

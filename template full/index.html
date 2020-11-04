@@ -13,15 +13,22 @@
   </head>
 
   <body class="w-75 mx-auto">
-    <main class="container-lg">
-
-      <div class="jumbotron">
-        <h1 class="display-3">Hotel Academy</h1>
-        <p class="lead">roomservice</p>
-        <hr class="my-2">
-        <p>Heerlijk genieten op de kamer</p>
-      </div>
-      <form id="form" action="order.html">
+    <header class="jumbotron ">
+      <h1 class="display-3">Hotel Academy</h1>
+      <p class="lead">roomservice</p>
+      <hr class="my-2">
+      <p>Heerlijk genieten op de kamer</p>
+    </header>
+    <main class="container-lg row">
+      <nav id="navB" class="navbar navbar-expand navbar-light bg-light bg-light col-2">
+        <div class="nav navbar-nav flex-column align-self-start">
+          <!-- <a class="nav-item nav-link " href="#naam">Naam </a> --> <a class="nav-item nav-link"
+            href="#ontbijt">Ontbijt </a>
+          <a class="nav-item nav-link" href="#dinner">Lunch / Avondeten</a>
+          <a class="nav-item nav-link" href="#snacks">Snacks</a>
+        </div>
+      </nav>
+      <form id="form" class="col-10" data-spy="scroll" data-target="#navB" data-offset="-10" action="order.html">
         <div id="resetBtn" class="btn btn-link btn-sm red">reset</div>
         <!-- Naam en kamernummer sectie -->
         <section id="step0" class="row step form-group">
@@ -33,17 +40,9 @@
           </div>
         </section>
         <!-- menu sectie -->
-        <section id="step1" class="row step form-group">
-          <nav class="navbar navbar-expand navbar-light bg-light fixed-top w-75 mx-auto">
-            <div class="nav navbar-nav">
-              <a class="nav-item nav-link active" href="#Ontbijt">Ontbijt <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#dinner">Lunch / Avondeten</a>
-              <a class="nav-item nav-link" href="#snacks">Snacks</a>
-            </div>
-          </nav>
-
+        <section id="step1" class="row step form-group ">
           <!-- Ontbijt    -->
-          <section id="Ontbijt" class="  form-group mt-5 ">
+          <section id="ontbijt" class="  form-group mt-5 ">
             <div class="col">
               <h2 class=" ">Ontbijt</h2>
               <!-- eggs -->
@@ -230,8 +229,8 @@
         </section>
         <!-- tijd sectie -->
         <section id="step2" class="flex-column step form-group">
-          <div class="form-group">
-            <label class="">Hoe laat? </label>
+          <div class="form-group first">
+            <label class="" for="#tijd"> Hoe laat? </label>
             <input id="tijd" type="time" class="col-md-2">
           </div>
 
@@ -285,6 +284,7 @@
     </script>
     <script src="js/roomservice.js"></script>
     <script src="js/sumary.js"></script>
+
   </body>
 
 </html>
