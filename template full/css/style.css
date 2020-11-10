@@ -9,8 +9,10 @@
 .card-body {
   min-height: 330px;
 }
+
 .card-footer {
   min-height: 128px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #resetBtn {
@@ -20,13 +22,14 @@
 .red {
   color: red;
 }
+
 .red:hover {
   text-decoration: none;
   color: lightcoral;
 }
-form{
-  height:500px;
+
+form {
+  height: 500px;
   overflow-y: scroll;
   position: relative;
 }
-
