@@ -3,7 +3,6 @@ const stepRows = document.querySelectorAll(".step").length;
 let steps = 0;
 buttonChoices.forEach(buttonChoosen => {
     buttonChoosen.addEventListener('click', (e) => {
-
         if ((steps == (stepRows - 1)) && buttonChoosen.id == "next") {
             // Dit is de laatste stap, hierna moet het form submit worden
             // alert('the end');
@@ -14,15 +13,18 @@ buttonChoices.forEach(buttonChoosen => {
                 case 'next':
                     steps++;
                     showSteps(steps);
+                    showNav(steps);
                     break;
                 case 'back':
                     hideSteps(steps);
                     steps--;
+                    showNav(steps);
                     break;
             }
         }
     });
 });
+
 showSteps = (step) => {
     console.log(step);
     // TODO @Bouke verplichte velden afvangen voordat je naar de volgende stap kan
@@ -33,6 +35,7 @@ showSteps = (step) => {
     if (step == (stepRows - 1)) {
         showOrder();
     }
+
 };
 
 hideSteps = (step) => {
@@ -48,3 +51,11 @@ hideSteps = (step) => {
     document.querySelector('#step' + step).style.display = "none";
     document.querySelector('#step' + (step - 1)).style.display = "flex";
 };
+
+showNav = (step) => {
+    if (step == 0) {
+        document.querySelector('nav').style.display = "flex";
+    } else {
+        document.querySelector('nav').style.display = "none";
+    }
+}
