@@ -1,7 +1,6 @@
 const buttonChoices = document.querySelectorAll('button');
 const stepRows = document.querySelectorAll(".step").length;
 let steps = 0;
-document.querySelector('#navB').style.display = "none";
 buttonChoices.forEach(buttonChoosen => {
     buttonChoosen.addEventListener('click', (e) => {
 
@@ -24,7 +23,6 @@ buttonChoices.forEach(buttonChoosen => {
         }
     });
 });
-
 showSteps = (step) => {
     console.log(step);
     // TODO @Bouke verplichte velden afvangen voordat je naar de volgende stap kan
@@ -35,7 +33,6 @@ showSteps = (step) => {
     if (step == (stepRows - 1)) {
         showOrder();
     }
-
 };
 
 hideSteps = (step) => {
@@ -50,15 +47,4 @@ hideSteps = (step) => {
     }
     document.querySelector('#step' + step).style.display = "none";
     document.querySelector('#step' + (step - 1)).style.display = "flex";
-};
-
-showNav = (step) => {
-
-    if (step == 1) {
-        document.querySelector('#navB').style.display = "flex";
-        document.querySelector('#ontbijt').focus();
-    } else {
-        document.querySelector('#navB').style.display = "none";
-    }
-
 };

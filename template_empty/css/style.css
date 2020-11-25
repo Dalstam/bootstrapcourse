@@ -5,18 +5,19 @@
 #back {
   display: none;
 }
-
+#step1 {
+  height: 500px;
+  overflow-y: scroll;
+}
+#resetBtn {
+  border: none;
+}
 .card-body {
   min-height: 330px;
 }
 .card-footer {
   min-height: 128px;
 }
-
-#resetBtn {
-  border: none;
-}
-
 .red {
   color: red;
 }
@@ -24,9 +25,3 @@
   text-decoration: none;
   color: lightcoral;
 }
-form{
-  height:500px;
-  overflow-y: scroll;
-  position: relative;
-}
-
