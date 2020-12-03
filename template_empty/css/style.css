@@ -10,7 +10,7 @@ nav{
   display: none;
 }
 form {
-  /height: 100vh;
+  height: 100vh;
   overflow-y: scroll;
 }
 #resetBtn {
