@@ -8,48 +8,52 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://bootstrap.yourfutureacademy.org/template_empty/css/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        <link rel="stylesheet" href="../template_empty/css/style.css">
+        <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     </head>
 
     <body>
         <header>
-            <h1 class="ch2-a ">Hotel Academy</h1>
+            <h1 class="display-1">Hotel Academy</h1>
             <h2>Roomservice</h2>
             <hr>
-            <p class="ch2-b">Heerlijk genieten op de kamer</p>
+            <p class="lead">Heerlijk genieten op de kamer</p>
         </header>
-        <main class="">
-            <form id="form" action="succes-roomservice.html">
-                <nav>
-
+        <main class="container">
+            <form id="form" class="border border-dark px-1" action="succes-roomservice.html">
+                <nav class="nav">
+                    <a class="nav-link active" href="#">Active</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </nav>
                 <!-- Naam en kamernummer sectie -->
-                <section id="step0" class="ch3-g">
-                    <div class="ch3-b">
-                        <label for="naam" class="ch3-e">Wat is uw naam? </label>
-                        <div class="ch3-d">
-                            <input id=" naam" type="text" placeholder="Uw naam">
+                <section id="step0" class="my-5">
+                    <div class="row">
+                        <label for="naam" class="col-3">Wat is uw naam? </label>
+                        <div class="col">
+                            <input id="naam" type="text" placeholder="Uw naam">
                         </div>
                     </div>
-                    <div class="ch3-b">
-                        <label for="kamerNo" class="ch3-e">Wat is uw kamernummer?</label>
-                        <div class="ch3-d">
+                    <div class="row">
+                        <label for="kamerNo" class="col-3">Wat is uw kamernummer?</label>
+                        <div class="col">
                             <input id="kamerNo" type="number">
                         </div>
                     </div>
                 </section>
                 <!-- menu sectie -->
-                <section id="step1" class="ch3-g">
+                <section class="my-5" id="step1">
                     <!-- Ontbijt  -->
-                    <section id="ontbijt" class="ch3-g">
-                        <h2 class="ch2-c">Ontbijt</h2>
-                        <div class="ch3-b ch3-c">
+                    <section class="my-5" id="ontbijt">
+                        <h2 class="text-center">Ontbijt</h2>
+                        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                             <!-- eggs -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/eggs.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Scrambled eggs</h5>
                                     <div>
                                         <p>
@@ -70,10 +74,10 @@
                                 </div>
                             </div>
                             <!-- full_english -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/full_english.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Full_english</h5>
                                     <div>
                                         <p>Full_english. Lorem ipsum dolor sit amet consectetur adipisicing
@@ -95,10 +99,10 @@
                                 </div>
                             </div>
                             <!-- Granola -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/granola.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Granola met Yohgurt</h5>
                                     <div>
                                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -121,14 +125,14 @@
                         </div>
                     </section>
                     <!-- diner -->
-                    <section id="dinner" class="ch3-g">
-                        <h2 class="ch2-c">Lunch / Avondeten</h2>
-                        <div class="ch3-b ch3-c">
+                    <section class="my-5" id="dinner">
+                        <h2 class="text-center">Lunch / Avondeten</h2>
+                        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                             <!-- Homemade hamburger -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/hamburger.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Homemade hamburger</h5>
                                     <div>
                                         <p>250 gram gekruid gehakt, pittige chedar kaas, roode ui, tomaat,
@@ -144,10 +148,10 @@
                                 </div>
                             </div>
                             <!-- Sole á la meuniere -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/sole.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Sole á la meuniere</h5>
                                     <div>
                                         <p>In botergebakken Tong (vis) met aardappel, haricots vert en citroen.
@@ -162,10 +166,10 @@
                                 </div>
                             </div>
                             <!-- Pappardelle al funghi -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/papardelle.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Pappardelle al funghi</h5>
                                     <div>
                                         <p>Pappardelle (pasta) met paddenstoelen, roomsaus en peterselie</p>
@@ -181,14 +185,14 @@
                         </div>
                     </section>
                     <!-- Snacks -->
-                    <section id="snacks" class="ch3-g">
-                        <h2 class="ch2-c">Snacks</h2>
-                        <div class="ch3-b ch3-c">
+                    <section class="my-5" id="snacks">
+                        <h2 class="text-center">Snacks</h2>
+                        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                             <!-- nachos -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/nachos.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Nachos</h5>
                                     <div>
                                         <p>Tortilia chips met gesmolten kaas</p>
@@ -202,10 +206,10 @@
                                 </div>
                             </div>
                             <!-- bitterballen -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/bitterballen.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Bitterballen</h5>
                                     <div>
                                         <p>Gefrituurde Garnituur </p>
@@ -215,15 +219,15 @@
                                         <label for="bitterballen">Hoeveel porties wilt u bestellen?</label>
                                         <input id="bitterballen" type="number" steps="1"></input>
                                         <button id="reset-bitterballen">Leeg maken</button>
-                                        <p class="ch2-d">1 portie is 6 bitterballen</p>
+                                        <p class="font-italic text-muted  small ">1 portie is 6 bitterballen</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Kaasstengels -->
-                            <div class="ch3-d">
+                            <div class="col">
                                 <div>
                                     <img src="https://bootstrap.yourfutureacademy.org/template_empty/img/Kaasstengels.png"
-                                        class="ch2-e">
+                                        class="img-fluid">
                                     <h5>Kaasstengels</h5>
                                     <div>
                                         <p>Gefrituurde deegstengels gevuld met kaas</p>
@@ -233,31 +237,26 @@
                                         <label for="kaasstengels">Hoeveel porties wilt u bestellen?</label>
                                         <input id="kaasstengels" type="number"></input>
                                         <button id="reset-kaasstengels">Leeg maken</button>
-                                        <p class="ch2-d">1 portie is 6 kaasstengels</p>
+                                        <p class="font-italic text-muted  small ">1 portie is 6 kaasstengels</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </section>
-
                 </section>
                 <!-- tijd sectie -->
-                <section id="step2">
-
-                    <div class="ch3-b ch3-h">
-                        <label class="ch3-e " for="#tijd"> Hoe laat? </label>
+                <section class="my-5" id="step2">
+                    <div class="row mb-2">
+                        <label class="col-3" for="#tijd"> Hoe laat? </label>
                         <input id="tijd" type="time">
                     </div>
-                    <div class="ch3-b ">
-                        <label class="ch3-e" for="spec-wensen">Speciale wensen</label>
-                        <textarea class="ch3-f" name="spec-wensen" id="spec-wensen" rows=" 3"></textarea>
-
+                    <div class="row">
+                        <label class="col-3" for="#spec-wensen">Speciale wensen</label>
+                        <textarea class="w-50" name="spec-wensen" id="spec-wensen" rows="5"></textarea>
                     </div>
-
                 </section>
                 <!-- Samenvatting en bevestiging sectie-->
-                <section id="step3">
+                <section class="my-5" id="step3">
                     <h2>Uw bestelling</h2>
                     <div id="bestelling">
                         <div id="naamSummary"></div>
@@ -289,7 +288,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
-        <script src="https://bootstrap.yourfutureacademy.org/template_empty/js/roomservice.js"></script>
+        <!-- <script src="https://bootstrap.yourfutureacademy.org/template_empty/js/roomservice.js"></script> -->
         <script src="https://bootstrap.yourfutureacademy.org/template_empty/js/sumary.js"></script>
     </body>
 

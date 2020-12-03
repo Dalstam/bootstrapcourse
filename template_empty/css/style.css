@@ -7,11 +7,12 @@
   display: none;
 } */
 nav{
-  display: none;
+  /* display: flex; */
 }
 form {
-  height: 100vh;
-  overflow-y: scroll;
+  /* height: 100vh; */
+  overflow-y:hidden;
+  overflow-x:hidden;
 }
 #resetBtn {
   border: none;
